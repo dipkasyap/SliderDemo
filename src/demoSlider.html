@@ -2,46 +2,21 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .slidecontainer {
-            width: 100%;
-        }
-
-        .slider {
-            -webkit-appearance: none;
-            width: 100%;
-            height: 25px;
-            background: #d3d3d3;
-            outline: none;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-        }
-
-        .slider::-webkit-slider-thumb {
-            appearance: none;
-            width: 40px;
-            height: 40px;
-            background: #4CAF50;
-            cursor: pointer;
-        }
-
-        .slider::-moz-range-thumb {
-            width: 64px;
-            height: 64px;
-            background: transparent;
-            background-image: url("heart.png");
-            cursor: pointer;
-            border-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
 
 <h1>Custom Range Slider</h1>
 
-<div class="slidecontainer">
-    <p>Custom range slider:</p>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+<div class="slidecontainer" style="background: transparent">
+    <input type="range" min="0" max="5" value="2" class="slider" step="1" id="myRange">
+    <div class="ticks">
+        <span class="tick first"></span>
+        <span class="tick"></span>
+        <span class="tick"></span>
+        <span class="tick"></span>
+        <span class="tick"></span>
+    </div>
 </div>
 
 </body>
